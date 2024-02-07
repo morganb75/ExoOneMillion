@@ -15,8 +15,6 @@ body{
 
 }
 
-
-
 h1 {
     color: white;
     font-size: 2em;
@@ -54,12 +52,32 @@ header>div>span:first-child{
     align-items: center;
     background: url(./img/hero-image.jpg);
     background-size: 110%;
-    /* background-position: center; */
     height: 55vh;
 }
 
+.presenting{
+    display: flex;
+    height: 30vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-button {
+.involving {
+    height:30vh;
+    text-align: center;
+    margin: 30px;
+}
+
+involving>button {
+    color: orangered;
+}
+
+.card-container{
+    display: flex;
+}
+
+.hero>button {
     width: 240px;
     height: 60px;
     margin:30px;
@@ -76,4 +94,14 @@ header>img{
 section>img{
     width: 75px;
     height: 75px;
+}
+
+footer {
+    background-color: orangered;
+    height: 10vh;
+}
+
+footer>img {
+    margin-top: 30px;
+    margin-left: 30px;
 }
