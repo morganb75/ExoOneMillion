@@ -4,9 +4,66 @@
         url('./fonts/glyphicons-halflings-regular.woff') format(‘woff’),
         url('./fonts/glyphicons-halflings-regular.woff') format(‘woff2’),
 }
-p{
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Halflings','MS sans serif';
+   
+
 }
+/* HEADER */
+header {
+    background-color: #222222;
+    color:grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+}
+header>div>span:first-child{
+    margin-right: 30px;
+}
+header>img{
+    width: 15em;
+}
+
+/* HAUT DE LA PAGE */
+.hero>p{
+    color: white;
+    font-size: 1em;
+    font-weight: normal;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: url(./images/hero-image.jpg);
+    background-size: 110%;
+    height: 55vh;
+}
+.hero>button {
+    width: 240px;
+    height: 60px;
+    margin:30px;
+    border-radius: 5px;
+    background-color: #d9534f;
+    color: white;
+    font-size: 1.8em;
+}
+
 /* MILIEU BLANC */
 .milieu{
     background: #ffffff;
