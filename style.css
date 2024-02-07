@@ -11,8 +11,6 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Halflings','MS sans serif';
-   
-
 }
 
 h1 {
@@ -21,7 +19,6 @@ h1 {
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
-    
 }
 
 h2 {
@@ -30,6 +27,10 @@ h2 {
     font-weight: normal;
     margin-bottom: 30px;
     text-align: center;
+}
+
+p {
+    margin: 5px;
 }
 
 header {
@@ -51,7 +52,7 @@ header>div>span:first-child{
     justify-content: flex-start;
     align-items: center;
     background: url(./img/hero-image.jpg);
-    background-size: 110%;
+    background-size: 120%;
     height: 55vh;
 }
 
@@ -63,18 +64,61 @@ header>div>span:first-child{
     align-items: center;
 }
 
-.involving {
-    height:30vh;
-    text-align: center;
-    margin: 30px;
+.presenting p:nth-child(2) {
+    color:orangered;
+    font-weight: bold;
+    font-size: 20px;
 }
 
-involving>button {
+.involving {
+    height:55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 232, 225);
+}
+
+.description {
+    color:orangered;
+    font-weight: bold;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.card {
+    padding: 15px;
+}
+
+.card>button {
     color: orangered;
+    background-color: white;
+    border-radius: 5px;
+    border: solid 1px grey;
+    padding: 3px;
+}
+
+.card > i {
+    background-color: black;
+    border-radius: 50%;
+    color:white;
+    font-size: 75px;
+    padding: 25px;
+    margin: 20px;
 }
 
 .card-container{
     display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 .hero>button {
@@ -82,7 +126,7 @@ involving>button {
     height: 60px;
     margin:30px;
     border-radius: 5px;
-    background-color: red;
+    background-color: orangered;
     color: white;
     font-size: 1.8em;
 }
@@ -92,8 +136,9 @@ header>img{
 }
 
 section>img{
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -101,7 +146,15 @@ footer {
     height: 10vh;
 }
 
-footer>img {
+.sousligne {
+    width: 75px;
+    height: 1px;
+    background: orangered;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+footer > img {
     margin-top: 30px;
     margin-left: 30px;
 }
