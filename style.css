@@ -1,15 +1,30 @@
+@font-face {
+    font-family: 'Halflings';
+    src: url('./fonts/glyphicons-halflings-regular.ttf') format(‘truetype’),
+        url('./fonts/glyphicons-halflings-regular.woff') format(‘woff’),
+        url('./fonts/glyphicons-halflings-regular.woff') format(‘woff2’),
+}
+p{
+    font-family: 'Halflings','MS sans serif';
+}
+/* MILIEU BLANC */
 .milieu{
-    background: #f8f8f6;
+    background: #ffffff;
     text-align: center;
     align-items: center;
+    margin-color: 
 }
+font{
+    color: orangered;
+}
+/* MILIEU GRIS */
 .features{
     background: #ebe1d7;
     text-align:center;
 }
 section.features .feature-container .feature {
     flex-basis: calc(33.333% - 20px);
-    padding: 20px;
+    padding: 30px;
     box-sizing: border-box;
 }
 section.features > .feature-container {
@@ -17,4 +32,34 @@ section.features > .feature-container {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+}
+h2{
+    color: orangered;
+}
+h3{
+    color: orangered;
+}
+i{
+    font-size: 40px;
+}
+.feature>i{
+    background: rgb(51,51,51);
+    color: #ffffff;
+    font-size: 250%;
+    padding: 17px;
+    border-radius: 50%;
+}
+button{
+    padding: 6px;
+    color: orangered;
+}
+/* FOOTER  */
+footer{
+    background: #f74c3c;
+    padding-top: 130px;
+    padding-bottom: 30px;
+}
+.logo2{
+    right: 25%;
+    margin-left: 8%;
 }
