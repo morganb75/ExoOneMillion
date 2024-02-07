@@ -135,7 +135,7 @@ header>img{
     width: 15em;
 }
 
-section>img{
+.hero > img{
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
@@ -157,4 +157,72 @@ footer {
 footer > img {
     margin-top: 30px;
     margin-left: 30px;
+}
+
+/* Media query pour les écrans largeur max 767px */
+@media (max-width: 767px){
+    
+    header {
+        justify-content: flex-start;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+
+    header>div {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero>button {
+        width: 120px;
+        height: 30px;
+        margin:15px;
+        border-radius: 5px;
+        background-color: orangered;
+        color: white;
+        font-size: 0.9em;
+    }
+
+    .hero > img {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 5px;
+    }
+
+    .presenting {
+        height: 40vh;
+    }
+
+    .presenting > img {
+        width: 125px;
+        height: 125px;
+        margin-top: 5px;
+    }
+
+    .involving {
+        height: 130vh;
+        
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+}
+
+/* Media query pour les écrans entre 767px et 991px */
+@media screen and (min-width: 767px) and (max-width: 991px) {
+
+}
+
+/* Media query pour les écrans entre 991px et 1199px */
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+
 }
