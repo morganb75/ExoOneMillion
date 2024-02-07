@@ -212,17 +212,70 @@ footer > img {
         display: flex;
         flex-direction: column;
     }
-
-
-
 }
 
 /* Media query pour les écrans entre 767px et 991px */
 @media screen and (min-width: 767px) and (max-width: 991px) {
 
+    header {
+        justify-content: flex-start;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero>button {
+        width: 160px;
+        height: 40px;
+        margin:15px;
+        border-radius: 10px;
+        background-color: orangered;
+        color: white;
+        font-size: 0.9em;
+    }
+
+    .hero > img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 5px;
+    }
+
+    .presenting {
+        height: 40vh;
+    }
+
+    .presenting > img {
+        width: 170px;
+        height: 170px;
+        margin-top: 5px;
+    }
+
+    .involving {
+        height: 130vh;
+        
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }
 
 /* Media query pour les écrans entre 991px et 1199px */
 @media screen and (min-width: 991px) and (max-width: 1199px) {
+
+.hero {
+    height: 60vh;
+}
+
+.presenting {
+    height: 40vh;
+}
 
 }
